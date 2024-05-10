@@ -11,9 +11,9 @@ jobs:
       - name: 签出代码
         uses: actions/checkout@master
       - name: 安装 nodejs
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "20.2"
       - name: 安装依赖
         run: npm install
       - name: 前端项目打包
